@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "builds": [{
+        "src": "sapsar/src/build.js",
+        "use": "@now/node"
+    }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "sapsar/src/build.js"
+    }]
+}

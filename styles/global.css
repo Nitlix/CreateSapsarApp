@@ -1,0 +1,297 @@
+:root {
+    --scrollbar: .5rem;
+    --primary: #ffff;
+    --primary-desc: #ffffffb2;
+    --primary-more: #ffffff75;
+
+    --global-transition: .15s ease;
+
+    --back: #000000;
+    --back2: rgba(0, 0, 0, 0.82);
+    --back3: rgba(0, 0, 0, 0.5);
+
+    --shadow: rgba(255, 255, 255, 0.14);
+    --shadow2: rgba(255, 255, 255, 0.237);
+    --shadow3: rgba(255, 255, 255, 0.397);
+    --shadow4: rgba(255, 255, 255, 0.569);
+
+    --back-trans: #000000bd;
+
+
+    --card-transition: cubic-bezier(0.83, 0.02, 0.17, 0.98);
+    --card-transition-2: cubic-bezier(0.34, 0.78, 0, 0.97);
+
+    --gradient1: linear-gradient(250deg, #ff9249 21%, #ff00ff 50%, #00eeff 100%);
+    --gradient2: linear-gradient(250deg, rgba(255, 0, 255, 1) 30%, rgba(0, 234, 255, 1) 100%);
+
+
+
+
+
+
+    --gradient1-c: linear-gradient(250deg, rgb(253, 126, 41) 21%, rgb(255, 0, 204) 50%, rgb(0, 229, 245) 100%);
+
+    --gradient1-r: linear-gradient(260deg, rgb(255, 146, 73) 10%, rgba(255, 0, 255, 1) 40%, rgba(0, 234, 255, 1) 75%, rgb(255, 146, 73) 100%);
+
+    --gc1: #ff9249;
+    --gc2: #ff00ff;
+    --gc3: #00eaff;
+
+    --gr1: #f7a066;
+    --gr2: #f344f3;
+    --gr3: #39dae9;
+
+    --grr1: rgb(249, 183, 140);
+    --grr2: rgb(255, 120, 255);
+    --grr3: rgb(174, 250, 255);
+
+    --page-padding: 8rem;
+
+
+
+    --gradient-smooth: linear-gradient(250deg, var(--gr1) 21%, var(--gr2) 50%, var(--gr3) 100%);
+    --gradient-smooth2: linear-gradient(250deg, var(--grr1) 21%, var(--grr2) 50%, var(--grr3) 100%);
+
+    --gradient-smooth-r: linear-gradient(90deg, var(--gr1) 25%, var(--gr2) 50%, var(--gr3) 75%, var(--gr1) 100%);
+
+
+    --gradient-background: radial-gradient(max(min(750px, 35vw), 250px) 750px at 2vw 850px, rgba(39, 179, 255, .15) 0, transparent 100%), radial-gradient(max(min(600px, 30vw), 200px) 1000px at 5vw 1800px, rgba(149, 110, 212, .1) 0, transparent 100%), radial-gradient(max(min(1000px, 50vw), 350px) 800px at 100vw 300px, rgba(250, 157, 169, .25) 0, transparent 100%), radial-gradient(max(min(600px, 30vw), 200px) 600px at 115vw 800px, rgba(255, 198, 18, .17) 0, transparent 100%), radial-gradient(max(min(800px, 30vw), 300px) 600px at 95vw 2700px, rgba(250, 157, 169, .08) 0, transparent 100%), radial-gradient(max(min(600px, 20vw), 200px) 800px at 100vw 3000px, rgba(149, 110, 212, .08) 0, transparent 100%), radial-gradient(max(min(600px, 20vw), 200px) 600px at -2vw 4000px, rgba(255, 198, 18, .07) 0, transparent 100%), radial-gradient(max(min(750px, 25vw), 250px) 750px at 5vw 4400px, rgba(39, 179, 255, .1) 0, transparent 100%), radial-gradient(max(min(1000px, 35vw), 350px) 800px at 0 5100px, rgba(250, 157, 169, .15) 0, transparent 100%), radial-gradient(max(min(600px, 20vw), 200px) 600px at 95vw 5800px, rgba(255, 198, 18, .17) 0, transparent 100%), radial-gradient(max(min(700px, 23vw), 230px) 1000px at 100vw 6400px, rgba(149, 110, 212, .1) 0, transparent 100%), radial-gradient(max(min(700px, 23vw), 230px) 400px at -5vw 6800px, rgba(255, 198, 18, .05) 0, transparent 100%), radial-gradient(max(min(750px, 25vw), 250px) 750px at 110vw 7000px, rgba(39, 179, 255, .07) 0, transparent 100%), radial-gradient(max(min(1000px, 35vw), 350px) 800px at 0 7100px, rgba(250, 157, 169, .05) 0, transparent 100%), radial-gradient(max(min(800px, 30vw), 300px) 1200px at -5vw 7000px, rgba(149, 110, 212, .05) 0, transparent 100%), radial-gradient(max(min(750px, 25vw), 250px) 700px at 100vw 7800px, rgba(39, 179, 255, .15) 0, transparent 100%);
+
+
+    --selection: rgb(0, 246, 209);
+
+
+
+    /* Text sizes */
+    --h1-big: 10rem;
+    --h1: 4.5rem;
+    --h2: 3.25rem;
+    --h3: 1.35rem;
+    --p: 1.05rem;
+    --p-big: 1.5rem;
+
+    --letter-spacing-multiplier: .01;
+
+    --heading-font: 'Neue Hass';
+    --p-font: 'Inter';
+
+    --h1-fw: 700;
+    --h2-fw: 700;
+    --h3-fw: 700;
+    --p-fw: 400;
+}
+
+
+
+
+:root {
+    --scrollbar: .5rem;
+    --primary: #000000;
+    --primary-desc: #00000091;
+    --primary-more: #00000075;
+
+    --back: #ffffff;
+    --back2: rgba(255, 255, 255, 0.82);
+    --back3: rgba(255, 255, 255, 0.5);
+
+    --shadow: rgba(0, 0, 0, 0.14);
+    --shadow2: rgba(0, 0, 0, 0.237);
+    --shadow3: rgba(0, 0, 0, 0.397);
+    --shadow4: rgba(0, 0, 0, 0.569);
+
+    --back-trans: #ffffffbd;
+
+
+    --page-padding: 8rem;
+
+
+    --selection: #000000;
+
+    --gradient-background: radial-gradient(max(min(750px, 35vw), 250px) 750px at 2vw 850px, rgba(39, 179, 255, .2) 0, transparent 100%), radial-gradient(max(min(600px, 30vw), 200px) 1000px at 5vw 1800px, rgba(149, 110, 212, .2) 0, transparent 100%), radial-gradient(max(min(1000px, 50vw), 350px) 800px at 100vw 300px, rgba(250, 157, 169, .4) 0, transparent 100%), radial-gradient(max(min(600px, 30vw), 200px) 600px at 115vw 800px, rgba(255, 198, 18, .25) 0, transparent 100%), radial-gradient(max(min(800px, 30vw), 300px) 600px at 95vw 2700px, rgba(250, 157, 169, .2) 0, transparent 100%), radial-gradient(max(min(600px, 20vw), 200px) 800px at 100vw 3000px, rgba(149, 110, 212, .2) 0, transparent 100%), radial-gradient(max(min(600px, 20vw), 200px) 600px at -2vw 4000px, rgba(255, 198, 18, .2) 0, transparent 100%), radial-gradient(max(min(750px, 25vw), 250px) 750px at 5vw 4400px, rgba(39, 179, 255, .2) 0, transparent 100%), radial-gradient(max(min(1000px, 35vw), 350px) 800px at 0 5100px, rgba(250, 157, 169, .22) 0, transparent 100%), radial-gradient(max(min(600px, 20vw), 200px) 600px at 95vw 5800px, rgba(255, 198, 18, .25) 0, transparent 100%), radial-gradient(max(min(700px, 23vw), 230px) 1000px at 100vw 6400px, rgba(149, 110, 212, .2) 0, transparent 100%), radial-gradient(max(min(700px, 23vw), 230px) 400px at -5vw 6800px, rgba(255, 198, 18, .12) 0, transparent 100%), radial-gradient(max(min(750px, 25vw), 250px) 750px at 110vw 7000px, rgba(39, 179, 255, .15) 0, transparent 100%), radial-gradient(max(min(1000px, 35vw), 350px) 800px at 0 7100px, rgba(250, 157, 169, .1) 0, transparent 100%), radial-gradient(max(min(800px, 30vw), 300px) 1200px at -5vw 7000px, rgba(149, 110, 212, .1) 0, transparent 100%), radial-gradient(max(min(750px, 25vw), 250px) 700px at 100vw 7800px, rgba(39, 179, 255, .34) 0, transparent 100%)
+}
+
+
+* {
+    transition: var(--global-transition);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    --font-size: var(--h1);
+    font-size: var(--font-size);
+    font-weight: var(--h1-fw);
+    font-family: var(--heading-font);
+    line-height: 1.05;
+}
+
+h1.big {
+    font-size: var(--h1-big);
+}
+
+h2 {
+    --font-size: var(--h2);
+    font-size: var(--font-size);
+    font-weight: var(--h2-fw);
+    font-family: var(--heading-font);
+    line-height: 1.05;
+}
+
+h3 {
+    --font-size: var(--h3);
+    font-size: var(--font-size);
+    font-weight: var(--h3-fw);
+    font-family: var(--p-font);
+    line-height: 1.05;
+}
+
+p {
+    --font-size: var(--p);
+    font-size: var(--font-size);
+    font-weight: var(--p-fw);
+    font-family: var(--p-font);
+    line-height: 1.05;
+    color: var(--primary-desc);
+}
+
+h1,
+h2,
+h3,
+p {
+    letter-spacing: calc(-1 * var(--font-size) * var(--letter-spacing-multiplier));
+}
+
+a {
+    text-decoration: underline;
+    color: var(--primary);
+}
+
+a.underline {
+    text-decoration: underline;
+}
+
+
+button {
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}
+
+body {
+    padding: 0rem var(--page-padding);
+    background-color: var(--back);
+    overflow-x: hidden;
+    color: var(--primary);
+    font-family: 'Inter', sans-serif;
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    min-height: 100vh;
+    pointer-events: none;
+    z-index: -2;
+    background: radial-gradient(max(min(750px, 35vw), 250px) 750px at 2vw 850px, rgba(39, 179, 255, .15) 0, transparent 100%), radial-gradient(max(min(600px, 30vw), 200px) 1000px at 5vw 1800px, rgba(149, 110, 212, .1) 0, transparent 100%), radial-gradient(max(min(1000px, 50vw), 350px) 800px at 100vw 300px, rgba(250, 157, 169, .25) 0, transparent 100%), radial-gradient(max(min(600px, 30vw), 200px) 600px at 115vw 800px, rgba(255, 198, 18, .17) 0, transparent 100%), radial-gradient(max(min(800px, 30vw), 300px) 600px at 95vw 2700px, rgba(250, 157, 169, .08) 0, transparent 100%), radial-gradient(max(min(600px, 20vw), 200px) 800px at 100vw 3000px, rgba(149, 110, 212, .08) 0, transparent 100%), radial-gradient(max(min(600px, 20vw), 200px) 600px at -2vw 4000px, rgba(255, 198, 18, .07) 0, transparent 100%), radial-gradient(max(min(750px, 25vw), 250px) 750px at 5vw 4400px, rgba(39, 179, 255, .1) 0, transparent 100%), radial-gradient(max(min(1000px, 35vw), 350px) 800px at 0 5100px, rgba(250, 157, 169, .15) 0, transparent 100%), radial-gradient(max(min(600px, 20vw), 200px) 600px at 95vw 5800px, rgba(255, 198, 18, .17) 0, transparent 100%), radial-gradient(max(min(700px, 23vw), 230px) 1000px at 100vw 6400px, rgba(149, 110, 212, .1) 0, transparent 100%), radial-gradient(max(min(700px, 23vw), 230px) 400px at -5vw 6800px, rgba(255, 198, 18, .05) 0, transparent 100%), radial-gradient(max(min(750px, 25vw), 250px) 750px at 110vw 7000px, rgba(39, 179, 255, .07) 0, transparent 100%), radial-gradient(max(min(1000px, 35vw), 350px) 800px at 0 7100px, rgba(250, 157, 169, .05) 0, transparent 100%), radial-gradient(max(min(800px, 30vw), 300px) 1200px at -5vw 7000px, rgba(149, 110, 212, .05) 0, transparent 100%), radial-gradient(max(min(750px, 25vw), 250px) 700px at 100vw 7800px, rgba(39, 179, 255, .15) 0, transparent 100%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    perspective: 1000;
+    background-size: 100% 10000px;
+}
+
+
+::selection {
+    background: var(--selection);
+    color: var(--back);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+
+
+@font-face {
+    font-family: 'Neue Hass';
+    src: url('/assets/fonts/NeueHass/black.ttf') format('truetype'),
+        url('/assets/fonts/NeueHass/black.woff') format('woff'),
+        url('/assets/fonts/NeueHass/black.woff2') format('woff2');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Neue Hass';
+    src: url('/assets/fonts/NeueHass/bold.ttf') format('truetype'),
+        url('/assets/fonts/NeueHass/bold.woff') format('woff'),
+        url('/assets/fonts/NeueHass/bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: 'Neue Hass';
+    src: url('/assets/fonts/NeueHass/light.ttf') format('truetype'),
+        url('/assets/fonts/NeueHass/light.woff') format('woff'),
+        url('/assets/fonts/NeueHass/light.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Neue Hass';
+    src: url('/assets/fonts/NeueHass/Thin.ttf') format('truetype'),
+        url('/assets/fonts/NeueHass/Thin.woff') format('woff'),
+        url('/assets/fonts/NeueHass/Thin.woff2') format('woff2');
+    font-weight: 400;
+}
