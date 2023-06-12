@@ -14,7 +14,7 @@ export default async function Page(data){
                 "index"
             ),
             p(
-                `It's ${data.headers['user-agent']}!`
+                `It's e!`
             )
         )
     )
