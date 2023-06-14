@@ -2,7 +2,8 @@ import useCSS from "sapsar/use/useCSS"
 import reportCSS from "sapsar/use/reportCSS"
 
 import useHead from "sapsar/use/useHead"
-import title from "sapsar/base"
+import Combine from "sapsar/basic/Combine"
+import { title } from "sapsar/base"
 
 
 useCSS([["global.css"]])
