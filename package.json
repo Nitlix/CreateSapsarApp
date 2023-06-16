@@ -9,6 +9,6 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "sapsar": "^0.1.7"
+    "sapsar": "^0.1.8"
   }
 }
