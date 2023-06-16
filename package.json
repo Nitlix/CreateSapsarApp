@@ -1,13 +1,14 @@
 {
   "name": "newsapsarapp",
-  "main": "src/index.js",
+  "main": "./node_modules/sapsar/src/index.js",
   "scripts": {
-    "dev": "node node_modules/sapsar/src/build"
+    "start": "node node_modules/sapsar/src/index",
+    "dev": "node node_modules/sapsar/src/index"
   },
   "author": "Nitlix S.T.",
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "sapsar": "^0.1.3"
+    "sapsar": "^0.1.4"
   }
 }
