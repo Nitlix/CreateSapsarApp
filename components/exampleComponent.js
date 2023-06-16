@@ -3,7 +3,7 @@ import { div, h1, h2, p } from "sapsar/base"
 import useCSS from "sapsar/use/useCSS"
 import useLeveledCSS from "sapsar/use/useLeveledCSS"
 
-useCSS([["exampleComponent.css", "exampleComponent"]])
+useCSS("exampleComponent.css", "exampleComponent")
 
 
 export default function(){

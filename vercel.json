@@ -1,11 +1,11 @@
 {
     "version": 2,
     "builds": [{
-        "src": "sapsar/src/build.js",
-        "use": "@now/node"
+        "src": "./node_modules/sapsar/src/build.js",
+        "use": "@vercel/node"
     }],
     "routes": [{
         "src": "/(.*)",
-        "dest": "sapsar/src/build.js"
+        "dest": "/"
     }]
 }
