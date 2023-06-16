@@ -1,3 +1,3 @@
-import Build from "sapsar/build"
+import app from 'sapsar/build'
 
-await Build()
+export default app;
