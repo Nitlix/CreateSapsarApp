@@ -1,5 +1,6 @@
 import useCSS from "sapsar/use/useCSS"
-import useLeveledCSS from "sapsar/use/useLeveledCSS"
+import ActiveCSS from "sapsar/active/ActiveCSS"
+
 
 import useHead from "sapsar/use/useHead"
 import Combine from "sapsar/basic/Combine"
@@ -27,7 +28,7 @@ useHead(
 export default async function(content){
     return (
         Combine(
-            useLeveledCSS("global"),
+            ActiveCSS("*"),
             content
         )
     )
