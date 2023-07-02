@@ -1,18 +1,39 @@
 import { h1 } from "sapsar/base"
 
 import Combine from "sapsar/basic/Combine"
+import Link from "sapsar/basic/Link"
 
-import exampleComponent from "../components/exampleComponent.js"
+
 import Layout from "../layouts/Layout.js"
 
-export default async function Page(data){    
+
+
+import exampleComponent from "../components/exampleComponent.js"
+import exampleText from "../components/exampleText.js"
+
+
+
+
+export default async function Page(data, build){    
     return (
         Layout(
             Combine(
-                h1(
-                    "Hello, Sapsar!"
+                exampleText(
+                "Hello, Sapsar!!!",
+                {
+                    styles: {
+                        color: "red",
+                        background: "blue"
+                    }
+                }
                 ),
-                exampleComponent()
+                exampleComponent(build),
+                Link(
+                    "Go to about page",
+                    {
+                        href: "/api/hello"
+                    }
+                )
             )
         )
     )
