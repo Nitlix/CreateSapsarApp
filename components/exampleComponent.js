@@ -1,9 +1,9 @@
 import { div, h1, h2, p } from "sapsar/base"
 
 import useCSS from "sapsar/use/useCSS"
-import activeCSS from "sapsar/active/activeCSS"
+import ActiveCSS from "sapsar/active/ActiveCSS"
 
-import activeRender from "sapsar/active/activeRender"
+import ActiveRender from "sapsar/active/ActiveRender"
 
 useCSS("exampleComponent.css", "exampleComponent")
 
@@ -41,7 +41,7 @@ export default function(build){
                 class: "exampleComponent"
             },
 
-            activeCSS("exampleComponent")
+            ActiveCSS("exampleComponent")
         )
     )
 }
