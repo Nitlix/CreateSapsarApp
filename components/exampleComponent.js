@@ -10,7 +10,7 @@ useCSS("exampleComponent.css", "exampleComponent")
 
 
 export default function(build){
-    activeRender(
+    ActiveRender(
         async ()=>{
             //Just sleep for 500ms to simulate a slow load
             await new Promise(resolve => setTimeout(resolve, 500));
