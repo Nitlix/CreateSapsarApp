@@ -15,6 +15,6 @@ picked up by the wind never to return.
 
 
 <br />
-while you still can, check what
+while you still can, see what
 
 the testing grounds for sapsar used to be.
