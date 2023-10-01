@@ -1,22 +1,24 @@
 import { div, h1, h2, p } from "sapsar/base"
 
 import useCSS from "sapsar/use/useCSS"
-import activeCSS from "sapsar/active/activeCSS"
+import ActiveCSS from "sapsar/active/ActiveCSS"
 
-import activeRender from "sapsar/active/activeRender"
+import ActiveMultiRender from "sapsar/active/ActiveMultiRender"
 
 useCSS("exampleComponent.css", "exampleComponent")
 
 
 
 export default function(build){
-    activeRender(
+    ActiveMultiRender(
         async ()=>{
             //Just sleep for 500ms to simulate a slow load
             await new Promise(resolve => setTimeout(resolve, 500));
-            return "Actually loaded!"
+            return {
+                "#h1": `This isn't a perfect box! ${build}`,
+                "#updateMe": "Updated after 500ms!",
+            }
         }, 
-        "#updateMe",
         null,
         build
     )
@@ -25,7 +27,10 @@ export default function(build){
     return(
         div(
             h1(
-                "This is a box!"
+                "This is a box!",
+                {
+                    id: "h1"
+                }
             ),
             h2(
                 "Which is an example of a component...",
@@ -41,7 +46,7 @@ export default function(build){
                 class: "exampleComponent"
             },
 
-            activeCSS("exampleComponent")
+            ActiveCSS("exampleComponent")
         )
     )
 }

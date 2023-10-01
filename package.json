@@ -2,14 +2,14 @@
   "name": "newsapsarapp",
   "main": "./api/index.js",
   "scripts": {
-    "start": "node node_modules/sapsar/src/build",
-    "dev": "node node_modules/sapsar/src/build gen_cache",
-    "build" : "node node_modules/sapsar/src/build gen_cache build"
+    "start": "node node_modules/sapsar/src/cli start",
+    "dev": "node dev",
+    "build": "node node_modules/sapsar/src/cli build"
   },
   "author": "Nitlix S.T.",
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "sapsar": "^0.2.2"
+    "sapsar": "^0.2.7"
   }
 }
