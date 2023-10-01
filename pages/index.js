@@ -1,40 +1,37 @@
-import { h1 } from "sapsar/base"
-
-import Combine from "sapsar/basic/Combine"
-import Link from "sapsar/basic/Link"
-
-
 import Layout from "../layouts/Layout.js"
 
+import LoadJS from "sapsar/load/LoadJS"
 
 
-import exampleComponent from "../components/exampleComponent.js"
 import exampleText from "../components/exampleText.js"
 
+import useMJS from "sapsar/use/useMJS"
+import useJS from "sapsar/use/useJS"
+import ActiveJS from "sapsar/active/ActiveJS"
 
+
+await useMJS(()=>{console.log("useMJS")}, "index.js")
+// await useJS("index.js")
 
 
 export default async function Page(data, build){    
-    return (
+    return [
+        LoadJS(
+            "touch"
+        ),
+        ActiveJS(
+            "index.js"
+        ),
         Layout(
-            Combine(
-                exampleText(
-                "Hello, Sapsar!!!",
-                {
-                    styles: {
-                        color: "red",
-                        background: "blue"
-                    }
-                }
-                ),
-                exampleComponent(build),
-                Link(
-                    "Go to about page",
-                    {
-                        href: "/api/hello"
-                    }
-                )
+            exampleText(
+            "Hello, Sapsar!!!",
+            {
+                styles: {
+                    color: "red",
+                    background: "blue"
+                },
+            }
             )
         )
-    )
+    ]
 }

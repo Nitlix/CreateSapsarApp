@@ -1,35 +1,36 @@
 import useCSS from "sapsar/use/useCSS"
-import ActiveCSS from "sapsar/active/ActiveCSS"
+import LoadCSS from "sapsar/load/LoadCSS"
 
 
 import useHead from "sapsar/use/useHead"
-import Combine from "sapsar/basic/Combine"
+import ParseArgs from "sapsar/basic/ParseArgs"
+
 import { title, meta } from "sapsar/base"
 
 
-await useCSS("global.css")
+useCSS(
+    "global.css",
+    "*"
+)
 
 
 useHead(
-    '*', 
-    Combine(
-        title(
-            "Sapsar"
-        ),
-        meta(
-            {
-                name: "description",
-                content: "Sapsar is a lightspeed web-framework used to build sophisticated websites."
-            }
-        )
-    )
+    title("Sapsar"),
+    meta({
+        name: "description",
+        content: "Sapsar is a framework for building websites with JavaScript."
+    }),
+    {
+        page: "*"
+    }
 )
 
-export default async function(content){
-    return (
-        Combine(
-            ActiveCSS("*"),
-            content
-        )
-    )
+
+export default function(...args){
+    const {content} = ParseArgs(args)
+
+    return [
+        LoadCSS("*"),
+        content   
+    ]
 }
